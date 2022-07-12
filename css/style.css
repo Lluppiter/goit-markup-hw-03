@@ -1,200 +1,307 @@
-:root {/*  правила кольорів */
-    --primary-text-color: #757575;
-    --title-text-collor: #212121;
-    --accent-color: #2196F3;
-    --accent-wht-collor: #FFFFFF;
-    --accent-blck-color: #000000;
-    --accent-footer-color: rgba(255, 255, 255, 0.6);
-    --background-color: #F5F4FA;
-    --background-accent-color: #2F303A;
+html {
+  box-sizing: border-box;
 }
 
-.main{ /*  загальні налаштування */ 
-    background-color: var(--accent-wht-collor);
-    color: var(--primary-text-color);
-
-    font-family: roboto, sans-serif;
-    font-size: 14px;
-    letter-spacing: 0.03em;
-   }
-
-ul{list-style: none;} /* загальні налаштування переліків */
-
-.logo{ /* наоаштування логотипу */
-    color: var(--accent-blck-color);
-    text-decoration: none;
-
-    font-family: Raleway,sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;    
+*,
+*::before,
+*::after {
+  box-sizing: inheri t;
 }
-.accent{color: var(--accent-color);}
 
-.link{  /* налаштування посилань */
-    text-decoration: none;
+:root {
+  /*  правила кольорів */
+  --primary-text-color: #757575;
+  --title-text-collor: #212121;
+  --accent-color: #2196f3;
+  --accent-wht-collor: #ffffff;
+  --accent-blck-color: #000000;
+  --accent-footer-color: rgba(255, 255, 255, 0.6);
+  --background-color: #f5f4fa;
+  --background-accent-color: #2f303a;
+}
 
-    font-weight: 500;    
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+.main {
+  /*  загальні налаштування */
+  background-color: var(--accent-wht-collor);
+  color: var(--primary-text-color);
+
+  font-family: roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+
+  margin: 0;
 }
-.nav{
-    color: var(--title-text-collor);
+
+ul {
+  list-style: none;
+} /* загальні налаштування переліків */
+
+.logo {
+  /* налаштування логотипу */
+  color: var(--accent-blck-color);
+  text-decoration: none;
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
 }
-.auth{
-    color: var(--primary-text-color);    
+.accent {
+  color: var(--accent-color);
+}
+
+.link {
+  /* налаштування посилань */
+  text-decoration: none;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.nav {
+  color: var(--title-text-collor);
+}
+
+.auth {
+  color: var(--primary-text-color);
 }
 .link:hover,
 .link:focus {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 .link.current {
-    color: var(--accent-color);
-}
-    
-
-
-.hero { /* налаштування блоку герой */
-    background-color: var(--background-accent-color);
-
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-}
-.hero-title{
-    color: var(--accent-wht-collor);
-
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-transform: uppercase;    
+  color: var(--accent-color);
 }
 
-.hero-button{
-    color: var(--accent-wht-collor);
-    background-color: var(--accent-color);
+.hero {
+  /* налаштування блоку герой */
+  background-color: var(--background-accent-color);
 
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;           
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  min-height: 600px;
+}
+.hero-title {
+  color: var(--accent-wht-collor);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+
+.hero-button {
+  color: var(--accent-wht-collor);
+  background-color: var(--accent-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
 }
 .hero-button:hover,
-.hero-button:focus{
-    color: var(--accent-color);
-    background-color: var(--accent-wht-collor);
+.hero-button:focus {
+  color: var(--accent-color);
+  background-color: var(--accent-wht-collor);
 }
 
-
-.advantages-title{ /* налаштування переваг */
-    color: var(--title-text-collor);
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
+.advantages-title {
+  /* налаштування переваг */
+  color: var(--title-text-collor);
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
 }
-.advantages-text{
-    font-weight: 400;
-    line-height: 1.71;
-      
+.advantages-text {
+  font-weight: 400;
+  line-height: 1.71;
 }
 
 .work-title, /* налаштування прикладів робіт */
-.team-title{
-    color: var(--title-text-collor);
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
+.team-title {
+  color: var(--title-text-collor);
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
 }
 
-.name-title { /* налаштування команди */
-    color: var(--title-text-collor);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
+.name-title {
+  /* налаштування команди */
+  color: var(--title-text-collor);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
 }
 
-.team-text{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.18;       
+.section-team {
+  background-color: var(--background-color);
+  min-height: 648px;
 }
 
-.button.secondary{ /* налаштування кнопок портфоліо */
-    color: var(--title-text-collor);
-    background-color: var(--background-color);
-    cursor: pointer;
+.team-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+}
 
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
+.button.secondary {
+  /* налаштування кнопок портфоліо */
+  color: var(--title-text-collor);
+  background-color: var(--background-color);
+  cursor: pointer;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
 }
 .button.secondary:hover,
-.button.secondary:focus{
-    color: var(--accent-wht-collor);
-    background-color: var(--accent-color);
+.button.secondary:focus {
+  color: var(--accent-wht-collor);
+  background-color: var(--accent-color);
 }
 
-.examples-title{ /* налаштування портфоліо */
-    color: var(--title-text-collor);
+.examples-title {
+  /* налаштування портфоліо */
+  color: var(--title-text-collor);
 
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
-.examples-text{
-    color: var(--primary-text-color);
+.examples-text {
+  color: var(--primary-text-color);
 
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.88;    
-}
-
-footer { /* загальні налаштування футера */
-    background-color: var(--background-accent-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
 }
 
-
-.logo.footer{ /* лого футера */
-    color: var(--accent-wht-collor);
-
+footer {
+  /* загальні налаштування футера */
+  background-color: var(--background-accent-color);
 }
-.link-gmaps{ /* налаштування посилань футера */
-    color: var(--accent-wht-collor);
-    
-    font-style: normal;
-    text-decoration: none;
-    font-weight: 400;    
-    line-height: 1.71;    
-}
-.link-address{
-    color: var(--accent-footer-color);
 
-    font-style: normal;
-    text-decoration: none;
-    font-weight: 400;    
-    line-height: 1.71;
+.logo.footer {
+  /* лого футера */
+  color: var(--accent-wht-collor);
+}
+.link-gmaps {
+  /* налаштування посилань футера */
+  color: var(--accent-wht-collor);
+
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 1.71;
+}
+.link-address {
+  color: var(--accent-footer-color);
+
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 1.71;
 }
 .link-address:hover,
-.link-address:focus{
-    color: var(--accent-color);
+.link-address:focus {
+  color: var(--accent-color);
 }
 
-.visually-hiden{ /* переховування заголовків */
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+.visually-hiden {
+  /* переховування заголовків */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-
-.button.current{
-    color: var(--accent-wht-collor);
-    background-color: var(--accent-color);
+.button.current {
+  color: var(--accent-wht-collor);
+  background-color: var(--accent-color);
 }
 
-
+.main {
+  outline: 2px solid orange;
+}
+.header {
+  outline: 2px solid orange;
+}
+.header-nav {
+  outline: 2px solid orange;
+}
+.logo {
+  outline: 2px solid orange;
+}
+.accent {
+  outline: 2px solid orange;
+}
+.link {
+  outline: 2px solid orange;
+}
+.nav {
+  outline: 2px solid orange;
+}
+.current {
+  outline: 2px solid orange;
+}
+.auth {
+  outline: 2px solid orange;
+}
+.hero {
+  outline: 2px solid orange;
+}
+.hero-title {
+  outline: 2px solid orange;
+}
+.hero-button {
+  outline: 2px solid orange;
+}
+.section-advantages {
+  outline: 2px solid orange;
+}
+.visually-hiden {
+  outline: 2px solid orange;
+}
+.advantages {
+  outline: 2px solid orange;
+}
+.advantages-title {
+  outline: 2px solid orange;
+}
+.advantages-text {
+  outline: 2px solid orange;
+}
+.section-work {
+  outline: 2px solid orange;
+}
+.work-title {
+  outline: 2px solid orange;
+}
+.section-team {
+  outline: 2px solid orange;
+}
+.team-title {
+  outline: 2px solid orange;
+}
+.name-title {
+  outline: 2px solid orange;
+}
+.team-text {
+  outline: 2px solid orange;
+}
+.footer {
+  outline: 2px solid orange;
+}
+.link-gmaps {
+  outline: 2px solid orange;
+}
+.link-address {
+  outline: 2px solid orange;
+}
