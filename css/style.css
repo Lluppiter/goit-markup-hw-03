@@ -5,7 +5,7 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inheri t;
+  box-sizing: inherit;
 }
 
 :root {
@@ -33,8 +33,27 @@ html {
 }
 
 ul {
+  /* загальні налаштування переліків */
   list-style: none;
-} /* загальні налаштування переліків */
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+}
 
 .logo {
   /* налаштування логотипу */
@@ -81,7 +100,8 @@ ul {
   text-align: center;
   letter-spacing: 0.06em;
 
-  min-height: 600px;
+  padding: 0;
+  margin: 0;
 }
 .hero-title {
   color: var(--accent-wht-collor);
@@ -90,6 +110,13 @@ ul {
   font-size: 44px;
   line-height: 1.36;
   text-transform: uppercase;
+
+  padding: 0;
+  width: 696px;
+  margin-top: 0;
+  margin-bottom: 30;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-button {
@@ -99,11 +126,21 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+
+  padding: 10px 32px;
+  border-radius: 4px;
+  min-width: 200px;
+  min-height: 50px;
 }
 .hero-button:hover,
 .hero-button:focus {
   color: var(--accent-color);
   background-color: var(--accent-wht-collor);
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .advantages-title {
@@ -154,9 +191,14 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+
+  padding: 6px 22px;
+  border-radius: 4px;
+  min-width: 200px;
+  min-height: 50px;
 }
-.button.secondary:hover,
-.button.secondary:focus {
+.button-secondary:hover,
+.button-secondary:focus {
   color: var(--accent-wht-collor);
   background-color: var(--accent-color);
 }
@@ -222,7 +264,7 @@ footer {
   overflow: hidden;
 }
 
-.button.current {
+.button-secondary-current {
   color: var(--accent-wht-collor);
   background-color: var(--accent-color);
 }
@@ -240,6 +282,9 @@ footer {
   outline: 2px solid orange;
 }
 .accent {
+  outline: 2px solid orange;
+}
+.container {
   outline: 2px solid orange;
 }
 .link {
