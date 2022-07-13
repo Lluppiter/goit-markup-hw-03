@@ -11,18 +11,22 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body class="main">
     <header class="header">
-      <div class="container">
+      <div class="container header-container">
         <nav class="header-nav">
           <a href="./index.html" class="logo" target="_self" title="Переход на заглавную страницу">
             <span class="accent">Web</span>Studio
           </a>
-          <ul>
-            <li>
+          <ul class="header-list">
+            <li class="nav-item">
               <a
                 href="./index.html"
                 class="link nav"
@@ -31,7 +35,7 @@
                 >Студия</a
               >
             </li>
-            <li>
+            <li class="nav-item">
               <a
                 href="./portfolio.html"
                 class="link nav current"
@@ -40,7 +44,7 @@
                 >Портфолио</a
               >
             </li>
-            <li>
+            <li class="nav-item">
               <a
                 href="./contacts.html"
                 class="link nav"
@@ -51,9 +55,13 @@
             </li>
           </ul>
         </nav>
-        <ul>
-          <li><a href="mailto:info@devstudio.com" class="link auth">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111" class="link auth">+38 096 111 11 11</a></li>
+        <ul class="header-auth">
+          <li class="auth-item">
+            <a href="mailto:info@devstudio.com" class="link auth">info@devstudio.com</a>
+          </li>
+          <li class="auth-item">
+            <a href="tel:+380961111111" class="link auth">+38 096 111 11 11</a>
+          </li>
         </ul>
       </div>
     </header>
@@ -64,16 +72,16 @@
           <!--filter-list-->
           <h1 class="visually-hiden">портфолио</h1>
           <!--invisible title -->
-          <ul>
-            <li><button type="button" class="button-secondary current">Все</button></li>
-            <li><button type="button" class="button-secondary">Веб-сайты</button></li>
-            <li><button type="button" class="button-secondary">Приложения</button></li>
-            <li><button type="button" class="button-secondary">Дизайн</button></li>
-            <li><button type="button" class="button-secondary">Маркетинг</button></li>
+          <ul class="examples-button-list">
+            <li class="examples-button"><button type="button" class="button-secondary current">Все</button></li>
+            <li class="examples-button"><button type="button" class="button-secondary">Веб-сайты</button></li>
+            <li class="examples-button"><button type="button" class="button-secondary">Приложения</button></li>
+            <li class="examples-button"><button type="button" class="button-secondary">Дизайн</button></li>
+            <li class="examples-button"><button type="button" class="button-secondary">Маркетинг</button></li>
           </ul>
           <!--work examples-->
-          <ul>
-            <li>
+          <ul class="examples-list">
+            <li class="examples-item">
               <a href="" class="link examples">
                 <img
                   src="./images/portfolio/techcrc.jpg"
@@ -85,7 +93,7 @@
                 <p class="examples-text">Веб-сайт</p>
               </a>
             </li>
-            <li>
+            <li class="examples-item">
               <a href="" class="link examples">
                 <img
                   src="./images/portfolio/neworlean.jpg"
@@ -97,7 +105,7 @@
                 <p class="examples-text">Дизайн</p>
               </a>
             </li>
-            <li>
+            <li class="examples-item">
               <a href="" class="link examples">
                 <img
                   src="./images/portfolio/seafood.jpg"
@@ -109,7 +117,7 @@
                 <p class="examples-text">Приложение</p>
               </a>
             </li>
-            <li>
+            <li class="examples-item">
               <a href="" class="link examples">
                 <img
                   src="./images/portfolio/prime.jpg"
@@ -121,7 +129,7 @@
                 <p class="examples-text">Маркетинг</p>
               </a>
             </li>
-            <li>
+            <li class="examples-item">
               <a href="" class="link examples">
                 <img
                   src="./images/portfolio/boxes.jpg"
@@ -133,7 +141,7 @@
                 <p class="examples-text">Приложение</p>
               </a>
             </li>
-            <li>
+            <li class="examples-item">
               <a href="" class="link examples">
                 <img
                   src="./images/portfolio/borders.jpg"
@@ -145,7 +153,7 @@
                 <p class="examples-text">Веб-сайт</p>
               </a>
             </li>
-            <li>
+            <li class="examples-item">
               <a href="" class="link examples">
                 <img
                   src="./images/portfolio/limited.jpg"
@@ -157,7 +165,7 @@
                 <p class="examples-text">Дизайн</p>
               </a>
             </li>
-            <li>
+            <li class="examples-item">
               <a href="" class="link examples">
                 <img
                   src="./images/portfolio/lab.jpg"
@@ -169,7 +177,7 @@
                 <p class="examples-text">Маркетинг</p>
               </a>
             </li>
-            <li>
+            <li class="examples-item">
               <a href="" class="link examples">
                 <img
                   src="./images/portfolio/business.jpg"
@@ -190,16 +198,16 @@
       <div class="container">
         <a
           href="./index.html"
-          class="logo footer"
+          class="logo logo-footer"
           target="_self"
           title="Переход на заглавную страницу"
         >
           <span class="accent">Web</span>Studio
         </a>
         <address>
-          <ul>
-            <li>
-              <a
+          <ul class="footer-list">
+              <li>
+                <a
                 href="https://goo.gl/maps/RdCzEvvyoKSF4xjN6"
                 class="link-gmaps"
                 target="_blank"
@@ -210,8 +218,8 @@
               >
             </li>
             <li><a href="mailto:info@example.com" class="link-address">info@example.com</a></li>
-            <li><a href="tel:+380991111111" class="link-address">+38 099 111 11 11</a></li>
-          </ul>
+            <li><a href="tel:+380991111111" class="link-address last">+38 099 111 11 11</a></li>
+          <ul>
         </address>
       </div>
     </footer>

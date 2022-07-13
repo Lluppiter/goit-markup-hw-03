@@ -11,21 +11,22 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" 
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" 
     />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body class="main">
     <header class="header">
-      <div class="container">
+      <div class="container header-container">
         <nav class="header-nav">
           <a href="./index.html" class="logo" target="_self" title="Переход на заглавную страницу">
             <span class="accent">Web</span>Studio
           </a>
-          <ul>
-            <li>
+          <ul class="header-list">
+            <li class="nav-item">
               <a
                 href="./index.html"
                 class="link nav current"
@@ -34,7 +35,7 @@
                 >Студия</a
               >
             </li>
-            <li>
+            <li class="nav-item">
               <a
                 href="./portfolio.html"
                 class="link nav"
@@ -43,7 +44,7 @@
                 >Портфолио</a
               >
             </li>
-            <li>
+            <li class="nav-item">
               <a
                 href="./contacts.html"
                 class="link nav"
@@ -54,16 +55,16 @@
             </li>
           </ul>
         </nav>
-        <ul>
-          <li><a href="mailto:info@devstudio.com" class="link auth">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111" class="link auth">+38 096 111 11 11</a></li>
+        <ul class="header-auth">
+          <li class="auth-item"><a href="mailto:info@devstudio.com" class="link auth">info@devstudio.com</a></li>
+          <li class="auth-item"><a href="tel:+380961111111" class="link auth">+38 096 111 11 11</a></li>
         </ul>
       </div>
     </header>
 
     <main>
-      <section class="hero section">
-        <div class="container">
+      <section class="hero">
+        <div class="container hero-container">
           <!-- motto + order servise -->
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="hero-button">Заказать услугу</button>
@@ -74,26 +75,26 @@
         <div class="container">
           <h2 class="visually-hiden">Наши преимущества</h2>
           <!--invisible title -->
-          <ul class="advantages">
-            <li>
+          <ul class="advantages-list">
+            <li class="advantages-item">
               <h3 class="advantages-title">Внимание к деталям</h3>
               <p class="advantages-text">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li>
+            <li class="advantages-item">
               <h3 class="advantages-title">Пунктуальность</h3>
               <p class="advantages-text">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li>
+            <li class="advantages-item">
               <h3 class="advantages-title">Планирование</h3>
               <p class="advantages-text">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li>
+            <li class="advantages-item">
               <h3 class="advantages-title">Современные технологии</h3>
               <p class="advantages-text">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
@@ -104,10 +105,10 @@
       </section>
       <!-- what do we do -->
       <section class="section-work section">
-        <div class="container">
+        <div class="container work">
           <h2 class="work-title">Чем мы занимаемся</h2>
-          <ul>
-            <li>
+          <ul class="work-list">
+            <li class="work-item">
               <img
                 src="./images/img1.jpg"
                 alt="Разработка алгоритма програмного обеспечения"
@@ -115,7 +116,7 @@
                 height="294"
               />
             </li>
-            <li>
+            <li class="work-item">
               <img
                 src="./images/img2.jpg"
                 alt="Разработка интерфейса дизайна мобильного приложения"
@@ -123,7 +124,7 @@
                 height="294"
               />
             </li>
-            <li>
+            <li class="work-item">
               <img src="./images/img3.jpg" alt="Подбор цветовой гаммы" width="370" height="294" />
             </li>
           </ul>
@@ -133,25 +134,49 @@
       <section class="section-team section">
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
-          <ul>
-            <li>
-              <img src="./images/igor.jpg" alt="Игорь Демьяненко" width="270" height="260" />
-              <h3 class="name-title">Игорь Демьяненко</h3>
+          <ul class="team-list">
+            <li class="team-item">
+              <img
+                class="team-img"
+                src="./images/igor.jpg"
+                alt="Игорь Демьяненко"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-name">Игорь Демьяненко</h3>
               <p class="team-text">Product Designer</p>
             </li>
-            <li>
-              <img src="./images/olga.jpg" alt="Ольга Репина" width="270" height="260" />
-              <h3 class="name-title">Ольга Репина</h3>
+            <li class="team-item">
+              <img
+                class="team-img"
+                src="./images/olga.jpg"
+                alt="Ольга Репина"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-name">Ольга Репина</h3>
               <p class="team-text">Frontend Developer</p>
             </li>
-            <li>
-              <img src="./images/nikolay.jpg" alt="Николай Тарасов" width="270" height="260" />
-              <h3 class="name-title">Николай Тарасов</h3>
+            <li class="team-item">
+              <img
+                class="team-img"
+                src="./images/nikolay.jpg"
+                alt="Николай Тарасов"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-name">Николай Тарасов</h3>
               <p class="team-text">Marketing</p>
             </li>
-            <li>
-              <img src="./images/michal.jpg" alt="Михаил Ермаков" width="270" height="260" />
-              <h3 class="name-title">Михаил Ермаков</h3>
+            <li class="team-item">
+              <img
+                class="team-img"
+                src="./images/michal.jpg"
+                alt="Михаил Ермаков"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-name">Михаил Ермаков</h3>
               <p class="team-text">UI Designer</p>
             </li>
           </ul>
@@ -163,16 +188,16 @@
       <div class="container">
         <a
           href="./index.html"
-          class="logo footer"
+          class="logo logo-footer"
           target="_self"
           title="Переход на заглавную страницу"
         >
           <span class="accent">Web</span>Studio
         </a>
         <address>
-          <ul>
-            <li>
-              <a
+          <ul class="footer-list">
+              <li>
+                <a
                 href="https://goo.gl/maps/RdCzEvvyoKSF4xjN6"
                 class="link-gmaps"
                 target="_blank"
@@ -183,8 +208,8 @@
               >
             </li>
             <li><a href="mailto:info@example.com" class="link-address">info@example.com</a></li>
-            <li><a href="tel:+380991111111" class="link-address">+38 099 111 11 11</a></li>
-          </ul>
+            <li><a href="tel:+380991111111" class="link-address last">+38 099 111 11 11</a></li>
+          <ul>
         </address>
       </div>
     </footer>

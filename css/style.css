@@ -1,13 +1,3 @@
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 :root {
   /*  правила кольорів */
   --primary-text-color: #757575;
@@ -33,30 +23,43 @@ html {
 }
 
 ul {
-  /* загальні налаштування переліків */
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
 h1,
 h2,
 h3 {
   margin: 0;
 }
-
 p {
   margin: 0;
 }
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
+img {
+  display: block;
+}
+button {
+  cursor: pointer;
+}
+a {
+  display: inline-block;
 }
 
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  padding: 0 15px;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+/* налаштування логотипу */
 .logo {
-  /* налаштування логотипу */
+  display: block;
+  padding: 24px 0;
+  margin-right: 93px;
+
   color: var(--accent-blck-color);
   text-decoration: none;
 
@@ -69,8 +72,25 @@ p {
   color: var(--accent-color);
 }
 
+.header-container,
+.header-nav,
+.header-list {
+  display: flex;
+}
+
+.header-auth {
+  display: flex;
+  margin-left: auto;
+}
+.nav-item:not(:last-child),
+.auth-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .link {
-  /* налаштування посилань */
+  display: block;
+  padding: 32px 0;
+
   text-decoration: none;
 
   font-weight: 500;
@@ -80,7 +100,6 @@ p {
 .nav {
   color: var(--title-text-collor);
 }
-
 .auth {
   color: var(--primary-text-color);
 }
@@ -91,9 +110,8 @@ p {
 .link.current {
   color: var(--accent-color);
 }
-
+/* налаштування блоку герой */
 .hero {
-  /* налаштування блоку герой */
   background-color: var(--background-accent-color);
 
   align-items: center;
@@ -102,6 +120,10 @@ p {
 
   padding: 0;
   margin: 0;
+}
+.hero-container {
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   color: var(--accent-wht-collor);
@@ -114,11 +136,10 @@ p {
   padding: 0;
   width: 696px;
   margin-top: 0;
-  margin-bottom: 30;
+  margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
 }
-
 .hero-button {
   color: var(--accent-wht-collor);
   background-color: var(--accent-color);
@@ -131,6 +152,7 @@ p {
   border-radius: 4px;
   min-width: 200px;
   min-height: 50px;
+  border: solid transparent;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -142,33 +164,48 @@ p {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
+/* налаштування переваг */
+.section-advantages.section {
+  padding-bottom: 0px;
+}
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+}
+.advantages-item {
+  width: 270px;
+}
 .advantages-title {
-  /* налаштування переваг */
   color: var(--title-text-collor);
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+
+  margin-bottom: 10px;
 }
 .advantages-text {
   font-weight: 400;
   line-height: 1.71;
 }
-
-.work-title, /* налаштування прикладів робіт */
+/* налаштування прикладів робіт */
+.section-work {
+  padding-top: 94px;
+}
+.work-list {
+  display: flex;
+  justify-content: space-between;
+}
+.work-title,
 .team-title {
   color: var(--title-text-collor);
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  margin-bottom: 50px;
 }
-
-.name-title {
-  /* налаштування команди */
-  color: var(--title-text-collor);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
+.team-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .section-team {
@@ -176,33 +213,38 @@ p {
   min-height: 648px;
 }
 
+/* налаштування команди */
+.team-item {
+  min-height: 368px;
+  width: 270px;
+  background-color: var(--accent-wht-collor);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  box-shadow: #000000 3px;
+}
+.team-name {
+  text-align: center;
+  color: var(--title-text-collor);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  margin-bottom: 10px;
+}
+.team-img {
+  margin-bottom: 30px;
+}
 .team-text {
+  text-align: center;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
+  padding-bottom: 30px;
 }
-
-.button.secondary {
-  /* налаштування кнопок портфоліо */
-  color: var(--title-text-collor);
-  background-color: var(--background-color);
-  cursor: pointer;
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-
-  padding: 6px 22px;
-  border-radius: 4px;
-  min-width: 200px;
-  min-height: 50px;
+/* налаштування сторінки портфоліо */
+.examples-button-list {
+  display: flex;
+  justify-content: center;
 }
-.button-secondary:hover,
-.button-secondary:focus {
-  color: var(--accent-wht-collor);
-  background-color: var(--accent-color);
-}
-
 .examples-title {
   /* налаштування портфоліо */
   color: var(--title-text-collor);
@@ -218,15 +260,54 @@ p {
   font-size: 16px;
   line-height: 1.88;
 }
+/* налаштування кнопок портфоліо */
+.button-secondary {
+  color: var(--title-text-collor);
+  background-color: var(--background-color);
 
-footer {
-  /* загальні налаштування футера */
-  background-color: var(--background-accent-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  padding: 6px 22px;
+  border-radius: 4px;
+  min-height: 38px;
+  border: solid transparent;
+  margin-bottom: 34px;
 }
 
-.logo.footer {
+.examples-button:not(:last-child) {
+  margin-right: 8px;
+}
+.button-secondary:hover,
+.button-secondary:focus {
+  color: var(--accent-wht-collor);
+  background-color: var(--accent-color);
+}
+
+.link.examples {
+  padding: 0;
+}
+.examples-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.examples-item {
+  width: 370px;
+}
+
+/* загальні налаштування футера */
+footer {
+  background-color: var(--background-accent-color);
+}
+.logo-footer {
   /* лого футера */
   color: var(--accent-wht-collor);
+  padding-top: 60px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
 }
 .link-gmaps {
   /* налаштування посилань футера */
@@ -236,6 +317,7 @@ footer {
   text-decoration: none;
   font-weight: 400;
   line-height: 1.71;
+  margin-bottom: 9px;
 }
 .link-address {
   color: var(--accent-footer-color);
@@ -244,12 +326,18 @@ footer {
   text-decoration: none;
   font-weight: 400;
   line-height: 1.71;
+  margin-bottom: 9px;
+}
+.link-address.last {
+  margin-bottom: 0;
 }
 .link-address:hover,
 .link-address:focus {
   color: var(--accent-color);
 }
-
+.footer-list {
+  padding-bottom: 60px;
+}
 .visually-hiden {
   /* переховування заголовків */
   position: absolute;
@@ -264,7 +352,7 @@ footer {
   overflow: hidden;
 }
 
-.button-secondary-current {
+.button-secondary.current {
   color: var(--accent-wht-collor);
   background-color: var(--accent-color);
 }
