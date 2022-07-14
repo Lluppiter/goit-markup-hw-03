@@ -8,6 +8,7 @@
   --accent-footer-color: rgba(255, 255, 255, 0.6);
   --background-color: #f5f4fa;
   --background-accent-color: #2f303a;
+  --background-hero-color: rgba(47, 48, 58, 0.4);
 }
 
 .main {
@@ -112,7 +113,7 @@ a {
 }
 /* налаштування блоку герой */
 .hero {
-  background-color: var(--background-accent-color);
+  background-color: var(--background-hero-color);
 
   align-items: center;
   text-align: center;
@@ -295,7 +296,7 @@ a {
   flex-wrap: wrap;
   gap: 30px;
 }
-.examples-imge {
+.examples-img {
   margin-bottom: 20px;
 }
 .examples-item {
